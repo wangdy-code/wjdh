@@ -1,0 +1,27 @@
+<view class="bigcontainer" >
+<view wx:for="{{list}}" wx:key="list">
+<navigator url="../detail/detail?id={{item.id}}" open-type="navigate" >
+  <view class="title">【{{item.report.theme}}】</view>
+  <view class = "title">{{item.report.content}}</view>
+  <view class="pic">
+  <image style="width:30%;height:69px;" src="{{item.pic}}"/>
+   
+  <view class="info">
+    <view class="desc">
+       <text>{{item.date}} </text>
+       <text>{{item.time}}</text>
+       <text class="author">作者：{{item.name}}</text>
+
+    <view class="opr">
+
+    </view>
+  </view>
+  </view>
+</view>
+<view class="hr"></view>
+</navigator>
+</view>
+</view>
+ 
+
+

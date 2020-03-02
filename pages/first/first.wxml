@@ -1,0 +1,9 @@
+<!--pages/first/first.wxml-->
+
+<form bindsubmit="clickFormView" report-submit="true" class="form-view">
+  <button bindtap = "dl_btn" class='submit' formType="submit" type="primary" >员工登陆</button>
+  <button bindtap = "admin_login" class='admin_login' formType="submit" type="primary" >管理员登陆</button>
+  
+</form>
+
+

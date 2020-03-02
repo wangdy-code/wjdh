@@ -1,0 +1,27 @@
+
+<view class="bigcontainer" >
+<view wx:for="{{list}}" wx:key="list">
+
+  <view class="title">【{{item.qj}}】</view>
+  <view class = "title">{{item.content}}</view>
+  <view class="pic">
+   
+  <view class="info">
+    <view class="desc">
+       <text>{{item.creatTime}} </text>
+       <text>{{item.time}}</text>
+       <text class="author">请假人：{{item.name}}</text>
+
+    <view class="opr">
+
+    </view>
+  </view>
+  </view>
+</view>
+<view class="hr"></view>
+
+</view>
+</view>
+ 
+
+

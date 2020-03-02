@@ -1,0 +1,28 @@
+/* pages/user/user.wxss */
+.np{
+  border-style: dashed;
+  border-width: 1px;
+  border-color:rgb(100, 181, 228); 
+  display: block;
+  font-size: 20px;
+}
+.np1{
+  margin: auto;
+  border-style: dashed;
+  border-width: 1px;
+  border-color:rgb(100, 181, 228); 
+  display: block;
+  font-size: 20px;
+
+}
+button{
+margin: 20px;
+position: relative;
+top:20px;
+}
+@import "../../colorui/animation.wxss";
+
+image[class*="gif-"] {
+  border-radius: 6rpx;
+  display: block;
+}

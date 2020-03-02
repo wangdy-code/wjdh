@@ -1,0 +1,9 @@
+
+<view class="itemView">用户名：
+    <input class="input" name="userName" placeholder="请输入本人姓名"
+    bindinput ="userNameInput"/>
+  </view>
+  <view class="viewName" style="background-color:#fbf9fe">
+  <button class="loginBtn" bindtap="loginBtnClick">用户名确认</button>
+</view>
+  <button bindinput = "wjm"bindtap = "xuanzezp">拍照并上传</button>

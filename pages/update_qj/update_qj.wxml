@@ -1,0 +1,43 @@
+
+<import src="../../../template/tabbar.wxml" />
+
+<form>
+  
+<!-- 日期选择器 -->
+
+
+<view class="select-time">
+<view class="picker-content">
+<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <input value='{{start_time}}' placeholder='请假开始时间：{{start_time}}'/>
+  </picker>
+  
+</view>
+</view>
+
+<view class="select-time">
+<view class="picker-content">
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange1" bindcolumnchange="bindMultiPickerColumnChange1" value="{{multiIndex}}" range="{{multiArray}}">
+    <input value='{{end_time}}' placeholder='请假结束时间：{{end_time}}'/>
+  </picker>
+</view>
+</view>
+
+
+
+<!-- -------------------提交------------------------- -->
+<view class="c-minheight wx-view_IxquNX" data-c_e_id="wx_view_036fe0e7">
+
+    <button class="wx-button_5oXxpi" data-c_e_id="wx_button_d82c0075" hover-class="button-hover" size="default" type="submit" style="background-color:rgb(25,184,77);color:#ffffff;border:rgb(25,184,77)" bindtap='bindViewTap'>
+        修改
+    </button>
+    <button class="wx-button_5oXxpi" data-c_e_id="wx_button_d82c0075" hover-class="button-hover" size="default" type="submit" style="background-color:rgb(25,184,77);color:#ffffff;border:rgb(25,184,77);margin-top:20px" bindtap='bindViewTap1'>
+        删除
+    </button>
+
+   
+    
+</view>
+</form>
+
+<template is="tabBar" data="{{tabBar:tabBar}}"></template>

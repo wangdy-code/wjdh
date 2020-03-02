@@ -1,0 +1,71 @@
+{
+  "pages": [
+    
+    "pages/first/first",
+    "pages/test3/test3",
+    "pages/user/user",
+    "pages/ft/ft",
+    "pages/test/test",
+    "pages/test1/test1",
+    "pages/superuser/superuser",
+    "pages/personqjlist/personqjlist",
+
+    
+    "pages/location/location",
+    "pages/qjlist/qjlist",
+    "pages/update_qj/update_qj",
+    
+    
+    "pages/worklist/worklist",
+    
+    
+    "pages/qj/qj",
+    
+    "pages/personlist/personlist",
+    
+    
+    
+    
+    
+    
+    "pages/admin/admin",
+    
+    "pages/search/search",
+    
+    
+    "pages/denglu/denglu",
+    "pages/kouling/kouling",
+    
+    "pages/logs/logs",
+    
+    
+    "pages/txl/txl",
+    "pages/photo/photo"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "万家灯火打卡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "backgroundColor":"#96ff",
+    "list":[
+      {
+        "pagePath": "pages/location/location",
+        "text": "定位打卡"
+      },{
+        "pagePath":"pages/user/user",
+        "text":"个人信息"
+      }]
+    },
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序"
+      }
+    },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  }

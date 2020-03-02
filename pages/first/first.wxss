@@ -1,0 +1,16 @@
+/* pages/first/first.wxss */
+
+
+button{
+  position: relative;
+  top:100px;
+
+}
+.admin_login{
+  position: relative;
+  top: 200px;
+}
+.test{
+  position: relative;
+  top: 300px;
+}

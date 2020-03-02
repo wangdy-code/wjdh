@@ -1,0 +1,30 @@
+<view class='search_container'>
+ <input bindinput = 'search'value='{{search}}' placeholder='请输入查询人员名字'/>
+ <button class = 'search_btn' bindtap="search_btn">提交</button>
+ </view>
+<view class="bigcontainer" >
+<view wx:for="{{list}}" wx:key="list">
+<navigator url="../update_qj/update_qj?_id={{item._id}}" open-type="navigate" >
+  <view class="title">【{{item.qj}}】</view>
+  <view class = "title">{{item.content}}</view>
+  <view class="pic">
+   
+  <view class="info">
+    <view class="desc">
+       <text>{{item.creatTime}} </text>
+       <text>{{item.time}}</text>
+       <text class="author">请假人：{{item.name}}</text>
+
+    <view class="opr">
+
+    </view>
+  </view>
+  </view>
+</view>
+<view class="hr"></view>
+</navigator>
+</view>
+</view>
+ 
+
+

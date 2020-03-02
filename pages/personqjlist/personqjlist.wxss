@@ -1,0 +1,20 @@
+
+.author{
+  position: relative;
+  left: 40%;
+}
+text{
+  font-size: 10px;
+  color: rgb(178,180,176);
+  position: relative;
+  left: 5%;
+}
+.title{
+  margin: 10px
+}
+.bigcontainer{
+  height: 800px;
+}
+.search_container{
+  height: 20%;
+}

@@ -1,0 +1,49 @@
+<!--pages/admin/admin.wxml-->
+
+<form bindsubmit='formSubmit'>
+     
+        <view class='form'>
+     
+        <input class = "int" name = "name_record" placeholder="请输入姓名" ></input>
+        <input class = "int" name = "date_record" placeholder="请输入日期（格式：2019-01-01）" ></input>
+        <input class = "int" name = "sb_xb" placeholder="请输入是上班还是下班"></input>
+        <button class='submit' formType="submit" type="primary" bindtap = "xg_btn">修改打卡记录</button>
+        
+        </view>
+
+     
+        
+          
+     
+    </form>
+    <view class="page">  
+   <!-- 时间段 -->  
+    <view class="picker_group">  
+      <picker mode="date" value="{{start_date}}"  end="{{date2}}" bindchange="bindDateChange">  
+        <view class="picker">  
+          {{start_date}}  
+        </view>  
+      </picker>  
+      至  
+      <picker mode="date" value="{{end_date}}" start="{{date}}" end="2050-01-01" bindchange="bindDateChange1">  
+        <view class="picker">  
+          {{end_date}}  
+        </view>  
+      </picker>        
+    </view>  
+  </view>   
+     
+<button bindtap = "search_btn" class='submit' formType="submit" type="primary" >导出打卡记录</button>
+<button bindtap = "qj_btn" class='qj_btn' formType="submit" type="primary" >导出请假记录</button>
+          
+     
+  
+
+
+
+<view>下载连接：
+<text selectable="true">{{fileUrl}}</text>
+</view>
+<view>下载连接：
+<text selectable="true">{{fileUrl1}}</text>
+</view>

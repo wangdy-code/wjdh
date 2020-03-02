@@ -1,0 +1,13 @@
+<view>
+  <text class = "np1">个人信息</text>
+  <text class = "np">姓名：{{name}}</text>
+  <text class = "np">电话：{{phone}}</text>
+</view>
+
+
+
+<view class="padding-sm">
+  <view class="flex flex-wrap justify-around">
+    <button class="bg-{{item.color}} cu-btn {{toggleDelay?'animation-slide-bottom':''}} margin-sm basis-sm shadow" style="animation-delay: {{(index+1)*0.1}}s;" wx:for="{{list}}" wx:key="{{index}}" bindtap="btn{{index}}">{{list[index].name}}</button>
+  </view>
+</view>

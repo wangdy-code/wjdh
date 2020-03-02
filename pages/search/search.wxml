@@ -1,0 +1,26 @@
+<view class="page">  
+   <!-- 时间段 -->  
+    <view class="picker_group">  
+      <picker mode="date" value="{{start_date}}"  end="{{date2}}" bindchange="bindDateChange">  
+        <view class="picker">  
+          {{start_date}}  
+        </view>  
+      </picker>  
+      至  
+      <picker mode="date" value="{{end_date}}" start="{{date}}" end="2050-01-01" bindchange="bindDateChange1">  
+        <view class="picker">  
+          {{end_date}}  
+        </view>  
+      </picker>        
+    </view>  
+  </view>  
+     
+<button bindtap = "search_btn" class='submit' formType="submit" type="primary" >提交</button>
+          
+     
+  
+
+<view class="container">
+<view class="title">查询结果</view>
+<table tableThemes="{{themeArr}}" tableItems="{{itemArr}}"></table>
+</view>
